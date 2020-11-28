@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet"
+		 href="style2.css">
+</head>
+<body>
+	<div class="login-page">
+	<div class="form">
+
+		<form class="register-form" action="Register.php" method="POST" autocomplete="off">
+		<input required type="text" name= "fname" placeholder="Firstname"/>
+		<input required type="text" name= "lname"  placeholder="Lastname"/>
+		<input required type="text" name= "uname" placeholder="Username"/>
+		<input required type="password" name= "pword"  placeholder="Password"/>
+		<input required type="text" name= "email" placeholder="Email ID"/>
+        <button type = "submit" id="Create" name="Create">Create </button>
+        <p class="message">Already Registered? <a href="index.html">Login</a></p>
+
+		</form>
+
+		
+
+		<script src= 'http://code.jquery.com/jquery-3.2.1.min.js'>
+		</script>
+
+		<script>
+			$('.message a').click(function(){
+			$('form').animate({height:"toggle", opacity:"toggle"},"slow");
+			});
+
+		
+		</script>
+
+
+
+</body>
+</html>

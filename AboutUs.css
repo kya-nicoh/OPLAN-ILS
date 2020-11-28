@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+ body {
+  background: #00272B;
+  font-family: Abel, Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.mainbody{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  background-color: #212121;
+}
+header {
+width: 100%;
+height: 5%;
+background-color: #333;
+}
+header b{
+  color: #a1ff34;
+}
+
+.logo {
+color: #fff;
+font-weight: bold;
+text-align: undefined;
+width: 10%;
+float: left;
+margin-top: 15px;
+margin-left: 25px;
+  transition: .2s;
+letter-spacing: 4px;
+}
+.logo img{
+  width: 150px;
+  margin-left: 50px;
+}
+nav {
+float: right;
+width: 50%;
+text-align: right;
+margin-right: 25px;
+}
+header nav ul {
+list-style: none;
+float: right;
+}
+nav ul li {
+float: left;
+color: #FFFFFF;
+font-size: 14px;
+text-align: left;
+margin-right: 25px;
+letter-spacing: 2px;
+font-weight: bold;
+transition: all 0.3s linear;
+}
+ul li a {
+color: #FFFFFF;
+text-decoration: none;
+}
+ul li:hover a {
+color: #2C9AB7;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+}
+
+.card {
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+img {
+  width:100px;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top:70px;
+}
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#f79d00, #64f38c);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card.one .additional {
+  background: linear-gradient(#BA5370, #F4E2D8);
+}
+
+.card.two .additional {
+  background: linear-gradient(#00d2ff, #928DAB);
+}
+
+.card.three .additional {
+  background: linear-gradient(#FF5F6D, #FFC371);
+}
+
+.card.four .additional {
+  background: linear-gradient(#EECDA3, #EF629F);
+}
+
+.card.five .additional {
+  background: linear-gradient(#4CA1AF, #C4E0E5);
+}
+
+.card.six .additional {
+  background: linear-gradient(#fd746c, #ff9068);
+}
+
+.card.seven .additional {
+  background: linear-gradient(#eacda3, #d6ae7b);
+}
+
+.card.eight .additional {
+  background: linear-gradient(#c2e59c, #64b3f4);
+}
+
+.card.nine .additional {
+  background: linear-gradient(#EFD780, #A2CCB6);
+}
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card.one .additional .more-info h1,
+.card.two .additional .more-info h1,
+.card.three .additional .more-info h1,
+.card.four .additional .more-info h1,
+.card.five .additional .more-info h1,
+.card.six .additional .more-info h1,
+.card.seven .additional .more-info h1,
+.card.eight .additional .more-info h1,
+.card.nine .additional .more-info h1{
+  color: #fff;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card.one .additional .coords,
+.card.two .additional .coords,
+.card.three .additional .coords,
+.card.four .additional .coords,
+.card.five .additional .coords,
+.card.six .additional .coords,
+.card.seven .additional .coords,
+.card.eight .additional .coords,
+.card.nine .additional .coords{
+  color: #fff;
+}
+
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+/* Footer */
+.huli{
+    background-color: #212121;
+     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top:10px;
+    bottom: auto;
+    color: white;
+}
+
+.huli span{
+    color: #2C9AB7;
+    padding-right: 50px;
+}
